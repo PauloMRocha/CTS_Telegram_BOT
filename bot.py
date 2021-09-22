@@ -10,7 +10,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 def extract_time(answer):
     h = ""
     m = ""
-    
+
     #porcura por :
     idx = answer.find(':')
 
@@ -78,7 +78,7 @@ def wtii(update,context):
         if(res == 1): #mensagem da resposta correta
             context.bot.send_message(chat_id=update.effective_chat.id, text='Ah óptimo!! Esse era o horário que eu precisava!!')
             context.bot.send_message(chat_id=update.effective_chat.id, text='Aqui, pegue isso como um agradecimento.')
-            context.bot.sendDocument(chat_id=update.effective_chat.id, document=open("binario", "rb"))
+            context.bot.sendDocument(chat_id=update.effective_chat.id, document=open("01", "rb"))
         elif(res == 2): #mensagem para respostas aleatórias
             context.bot.send_message(chat_id=update.effective_chat.id, text='Bom, parece que nossos relógios não batem, alguem terá que ajustar as horas.')
         elif(res == 3): #mensagem para horarios impossíveis
