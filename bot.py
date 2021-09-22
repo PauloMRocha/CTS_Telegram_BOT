@@ -14,7 +14,7 @@ def extract_time(answer):
     #porcura por :
     idx = answer.find(':')
 
-    #caso não exista : procura por h
+    #caso não exista : procura por hf
     if(idx < 0):
         idx = answer.find('h')
 
@@ -36,7 +36,6 @@ def extract_time(answer):
             m += answer[idx+2]
 
     #returns
-    print(h+":"+m)
     if(h!="" and m==""):
         return int(h), 0
 
