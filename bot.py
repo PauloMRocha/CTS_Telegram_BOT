@@ -54,7 +54,7 @@ def resp(answer):
             return m
         if(h<0 or h>23 or m<0 or m>59):
             return 3
-        if(h == 13):
+        if(h == 13 or h == 14):
             if(m>=50 and m<=55):
                 return 1
         if(h == 4 or h==16):
